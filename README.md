@@ -4,14 +4,28 @@ A reusable Expo starter with a simple tab app shell and a neutral default setup 
 
 ## Stack
 
-- Expo SDK 54
-- Expo Router v6
-- NativeWind v4
+- Expo SDK 57
+- React Native 0.86
+- React 19.2
+- Expo Router 57
+- NativeWind 4.2 with Tailwind CSS 3.4
 - TanStack Query v5
 - Axios
 - Expo Image Picker
+- Expo Notifications
+- Expo Development Client
 - React Native Toast Message
 - React Native SVG Transformer
+
+NativeWind v5 is still a prerelease, so this production template stays on the latest stable NativeWind v4 and its supported Tailwind CSS v3 line.
+
+## Requirements
+
+- Node.js 22.13 or newer
+- npm 11
+- Android 7 or newer
+- iOS 16.4 or newer
+- Xcode 26.4 or newer for local iOS builds
 
 ## Quick Start
 
@@ -28,6 +42,15 @@ cmd /c npm install
 cmd /c copy .env.example .env
 cmd /c npm run dev
 ```
+
+Run the local static checks with:
+
+```bash
+npm run check
+npx expo-doctor@latest
+```
+
+The `development` EAS profile uses `expo-dev-client`. Rebuild the development client after changing the Expo SDK or any native dependency.
 
 ## Template Defaults
 
@@ -83,5 +106,6 @@ eas.json
 ## Notes
 
 - `expo-router`, `nativewind`, and the SVG transformer are already configured.
+- Reanimated and Worklets are pinned to the Expo SDK 57-compatible versions required by NativeWind.
 - TanStack Query is wired at the app root so you can add server-state hooks without more setup.
 - Toast support is already mounted in the root layout.
