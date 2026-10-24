@@ -17,7 +17,7 @@ A reusable Expo starter with a simple tab app shell and a neutral default setup 
 - React Native Toast Message
 - React Native SVG Transformer
 
-NativeWind v5 is still a prerelease, so this production template stays on the latest stable NativeWind v4 and its supported Tailwind CSS v3 line.
+This starter uses NativeWind v4 with Tailwind CSS v3. Check dependency compatibility and rebuild the native development client when changing this combination.
 
 ## Requirements
 
